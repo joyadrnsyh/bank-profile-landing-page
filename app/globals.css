@@ -6,6 +6,8 @@
 
 @import "shadcn/tailwind.css";
 
+@import "@heroui/styles";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -128,9 +130,11 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }

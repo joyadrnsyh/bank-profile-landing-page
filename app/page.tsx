@@ -2,6 +2,8 @@
 
 import { ArrowUpRight, CreditCard, Landmark, ShieldOff } from "lucide-react";
 import Image from "next/image";
+import { Button } from '@heroui/react';
+
 export default function Home() {
   return (
     <main>
@@ -52,42 +54,64 @@ export default function Home() {
       </section>
 
       {/* FUTURE PAYMENT */}
-      <section className="min-h-screen bg-white">
-        {/* Luar */}
-        <div className="w-auto min-h-screen flex items-center justify-center mx-10">
-          {/* Bagian 1 Atas */}
-          <div className="mx-10 bg-blue-500 px-8 py-8 rounded-xl">
-            <div className="flex items-center justify-between mx-8 my-8 space-x-10">
-              <div className="w-[500px] flex flex-col">
-                <p>Future Payment</p>
-                <h1 className="w-full font-bold text-[32px]">Experience that grows {" "} <br />
-                  <span>
-                    with your scale.
-                  </span>
+      <section className="min-h-screen bg-white px-4 py-16 md:px-10">
+        <div className="mx-auto flex min-h-screen max-w-7xl items-center justify-center">
+          <div className="w-full rounded-bl-[45px] rounded-tr-[45px] bg-cyan-700 px-6 py-10 md:px-10 lg:px-16">
+
+            {/* Bagian Atas */}
+            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+              <div className="w-full md:w-1/2">
+                <p className="mb-3 text-sm font-medium text-white">
+                  Future Payment
+                </p>
+
+                <h1 className="text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
+                  Experience that grows <br className="hidden sm:block" />
+                  <span>with your scale.</span>
                 </h1>
               </div>
-              <div className="w-[500px]">
-                <p className="w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maxime perferendis delectus voluptatem, facere nam nobis quibusdam libero? Aspernatur beatae optio odio! Eligendi numquam delectus cum beatae vitae facilis veniam!</p>
+
+              <div className="w-full md:w-1/2">
+                <p className="text-base leading-relaxed text-white/90 md:text-lg">
+                  Design a financial operating system that works for your business
+                  and streamlined cash flow management.
+                </p>
               </div>
             </div>
-            {/* Bagian 2 Bawah */}
-            <div className="flex flex mx-8 my-8 space-x-10">
-              <div className="flex gap-8">
-                <div className="bg-red-100 w-full items-center justify-center px-8 py-8 space-y-4">
-                  <CreditCard size={60} />
-                  <h1 className="text-2xl font-bold">Free Transfers</h1>
-                  <p>Create a financial experienceay and automate repeate purchases by scheduling recurring payment</p>
-                </div>
-                <div className="bg-red-100 w-full items-center justify-center px-8 py-8 space-y-4">
-                  <Landmark size={60} />
-                  <h1 className="text-2xl font-bold">Multiple Account</h1>
-                  <p>Run your operations with cash from your account and generate yield on funds stored in your account.</p>
-                </div>
-                <div className="bg-red-100 w-full items-center justify-center px-8 py-8 space-y-4">
-                  <ShieldOff size={60} />
-                  <h1 className="text-2xl font-bold">Unmatched Security</h1>
-                  <p>Securely manage your finance with organized-wide MFA, card-locking, and account-level controls.</p>
-                </div>
+
+            {/* Bagian Bawah */}
+            <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="rounded-br-[25px] rounded-tl-[25px] bg-white px-6 py-8">
+                <CreditCard size={56} className="text-slate-700" />
+                <h1 className="mt-4 text-xl font-bold text-slate-700 md:text-2xl">
+                  Free Transfers
+                </h1>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
+                  Create a financial experience and automate repeat purchases by
+                  scheduling recurring payments.
+                </p>
+              </div>
+
+              <div className="rounded-br-[25px] rounded-tl-[25px] bg-white px-6 py-8">
+                <Landmark size={56} className="text-slate-700" />
+                <h1 className="mt-4 text-xl font-bold text-slate-700 md:text-2xl">
+                  Multiple Account
+                </h1>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
+                  Run your operations with cash from your account and generate yield
+                  on funds stored in your account.
+                </p>
+              </div>
+
+              <div className="rounded-br-[25px] rounded-tl-[25px] bg-white px-6 py-8 md:col-span-2 lg:col-span-1">
+                <ShieldOff size={56} className="text-slate-700" />
+                <h1 className="mt-4 text-xl font-bold text-slate-700 md:text-2xl">
+                  Unmatched Security
+                </h1>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
+                  Securely manage your finance with organization-wide MFA,
+                  card-locking, and account-level controls.
+                </p>
               </div>
             </div>
           </div>

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from '@heroui/react';
+import { ArrowUpRight } from "lucide-react";
 
 const menuItems = [
     { name: "Beranda", href: "/" },
@@ -14,7 +16,7 @@ const navLink =
 export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b">
-            <div className="mx-8 flex  items-center justify-between px-6 py-4 lg:px-8">
+            <div className="mx-8 flex items-center justify-between px-6 py-4 lg:px-8">
                 <div className="flex items-center gap-10">
                     {/* Logo */}
                     <Link href="/" className="flex items-center">
@@ -43,18 +45,7 @@ export default function Navbar() {
 
                 {/* CTA */}
                 <div className="flex items-center gap-4">
-                    <Link
-                        href="/login"
-                        className="rounded-md bg-white px-3 py-2 text-slate-500 border border-slate-200 transition-all duration-300 hover:bg-blue-500 hover:text-white hover:shadow-lg hover:shadow-blue-500/30"
-                    >
-                        Login
-                    </Link>
-                    <Link
-                        href="/register"
-                        className="rounded-md bg-blue-500 px-3 py-2 text-white transition-all duration-300 hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/30"
-                    >
-                        Sign Up
-                    </Link>
+                    <Button size="lg" className={"bg-cyan-700 w-[150px] text-white hover:bg-blue-500"}> Get Started <ArrowUpRight className="text-white text-xl" /></Button>
                 </div>
             </div>
         </nav>
