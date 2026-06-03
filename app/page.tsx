@@ -198,20 +198,59 @@ export default function Home() {
           <h2 className="text-4xl w-1/2">Maximize your returns with a Reserve account that generates.</h2>
 
           <div className="flex gap-8 mt-10 text-white lg:grid-cols-2">
-            <div className="flex flex-col gap-2 rounded-xl bg-white/20 text-white w-1/2 px-8 py-8">
+            <div className="flex flex-col gap-2 rounded-bl-2xl rounded-tr-2xl bg-cyan-600 text-white w-1/2 px-8 py-8">
               <h1 className="text-8xl font-bold">1</h1>
               <h1 className="text-2xl font-bold">Open your account</h1>
               <p>Sign up to Nova Bank and set up your account from the dashboard.</p>
             </div>
-            <div className="flex flex-col gap-2 rounded-xl bg-white/20 w-1/2 px-8 py-8">
+            <div className="flex flex-col gap-2 rounded-bl-2xl rounded-tr-2xl bg-cyan-600 w-1/2 px-8 py-8">
               <h1 className="text-8xl font-bold">2</h1>
               <h1 className="text-2xl font-bold">Transfer your money</h1>
               <p>Move money from to another account info and start to earning up.</p>
             </div>
-            <div className="flex flex-col gap-2 rounded-xl bg-white/20 w-1/2 px-8 py-8">
+            <div className="flex flex-col gap-2 rounded-bl-2xl rounded-tr-2xl bg-cyan-600 w-1/2 px-8 py-8">
               <h1 className="text-8xl font-bold">3</h1>
               <h1 className="text-2xl font-bold">Watch your balance grow</h1>
               <p>Accessed instantly and remain insulated from market volatility</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MISSION */}
+      <section className="min-h-screen bg-white px-4 py-16">
+        <div className="mx-auto flex flex-col min-h-screen max-w-7xl text-black">
+          <div className="flex flex-col max-auto gap-4 text-center">
+            <h1 className="text-cyan-500">OUR MISSION</h1>
+            <h1 className="text-4xl font-bold">We are helped <br />inovative companies</h1>
+            <p>Hundreds of all size and across all industries <br /> have made a big improvements with us.</p>
+          </div>
+          <div className="flex items-center justify-center text-center mt-10 gap-20">
+            <div className="flex flex-col gap-4">
+              <h1 className="text-6xl font-bold">24%</h1>
+              <p>Revenue Business</p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h1 className="text-6xl font-bold">180K</h1>
+              <p>Inanual revenue</p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h1 className="text-6xl font-bold">10+</h1>
+              <p>Months of runway</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col text-center mt-24 gap-16 mx-10">
+            <h1>CHOOSE PLAN :</h1>
+            <div className="flex gap-8 justify-center">
+              <div className="w-full bg-slate-200 px-20 py-10 text-left space-y-20 rounded-bl-xl rounded-tr-xl">
+                <h1 className="text-cyan-900 text-4xl font-bold">Plus</h1>
+                <button className="text-cyan-900 font-bold w-full flex justify-between text-2xl">$2.99/month <ArrowUpRight size={32} /> </button>
+              </div>
+              <div className="w-full text-white bg-cyan-900 px-20 py-10 text-left space-y-20 rounded-bl-xl rounded-tr-xl">
+                <h1 className="text-4xl font-bold">Premium</h1>
+                <button className="w-full flex justify-between text-2xl">$2.99/month <ArrowUpRight size={32} /> </button>
+              </div>
             </div>
           </div>
         </div>
