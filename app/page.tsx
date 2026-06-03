@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, CreditCard, Landmark, ShieldOff, FingerprintPattern, BookKey } from "lucide-react";
+import { ArrowUpRight, CreditCard, Landmark, ShieldOff, Fingerprint, BookKey } from "lucide-react";
 import Image from "next/image";
 import RevenueChart from "@/components/Chart";
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="min-h-screen bg-slate-100">
+      <section className="min-h-screen bg-slate-100 px-4 py-16">
 
         <div className="mx-auto flex min-h-screen max-w-7xl items-center px-6 lg:px-12">
           {/* Left Content */}
@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* WHY US */}
-      <section className="bg-slate-50 py-24">
+      <section className="bg-slate-50 px-4 py-16">
         <div className="mx-auto max-w-7xl px-6">
 
           {/* Heading */}
@@ -153,13 +153,13 @@ export default function Home() {
               </h3>
 
               <div className="mt-10 flex items-center justify-center gap-8">
-                <FingerprintPattern />
+                <Fingerprint size={48} className="text-cyan-600" />
 
                 <div className="text-slate-300 text-3xl">
                   ↔
                 </div>
 
-                <BookKey />
+                <BookKey size={48} className="text-cyan-600" />
               </div>
             </div>
           </div>
@@ -190,7 +190,32 @@ export default function Home() {
 
         </div>
       </section>
-    </main>
 
+      {/* STEP */}
+      <section className="min-h-screen bg-cyan-900 px-4 py-16">
+        <div className="mx-auto flex flex-col min-h-screen max-w-7xl justify-center text-white">
+          <h1 className="mb-5">STEP</h1>
+          <h2 className="text-4xl w-1/2">Maximize your returns with a Reserve account that generates.</h2>
+
+          <div className="flex gap-8 mt-10 text-white lg:grid-cols-2">
+            <div className="flex flex-col gap-2 rounded-xl bg-white/20 text-white w-1/2 px-8 py-8">
+              <h1 className="text-8xl font-bold">1</h1>
+              <h1 className="text-2xl font-bold">Open your account</h1>
+              <p>Sign up to Nova Bank and set up your account from the dashboard.</p>
+            </div>
+            <div className="flex flex-col gap-2 rounded-xl bg-white/20 w-1/2 px-8 py-8">
+              <h1 className="text-8xl font-bold">2</h1>
+              <h1 className="text-2xl font-bold">Transfer your money</h1>
+              <p>Move money from to another account info and start to earning up.</p>
+            </div>
+            <div className="flex flex-col gap-2 rounded-xl bg-white/20 w-1/2 px-8 py-8">
+              <h1 className="text-8xl font-bold">3</h1>
+              <h1 className="text-2xl font-bold">Watch your balance grow</h1>
+              <p>Accessed instantly and remain insulated from market volatility</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
