@@ -1,14 +1,16 @@
 "use client";
 
-import { ArrowUpRight, CreditCard, Landmark, ShieldOff } from "lucide-react";
+import { ArrowUpRight, CreditCard, Landmark, ShieldOff, FingerprintPattern, BookKey } from "lucide-react";
 import Image from "next/image";
-import { Button } from '@heroui/react';
+import RevenueChart from "@/components/Chart";
+
 
 export default function Home() {
   return (
     <main>
       {/* HERO */}
       <section className="min-h-screen bg-slate-100">
+
         <div className="mx-auto flex min-h-screen max-w-7xl items-center px-6 lg:px-12">
           {/* Left Content */}
           <div className="flex w-full flex-col justify-center lg:w-1/2">
@@ -115,6 +117,77 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* WHY US */}
+      <section className="bg-slate-50 py-24">
+        <div className="mx-auto max-w-7xl px-6">
+
+          {/* Heading */}
+          <div className="mb-16 text-center">
+            <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-cyan-600">
+              WHY US
+            </p>
+            <h2 className="text-5xl font-bold text-slate-900">
+              Why they prefer Nova
+            </h2>
+          </div>
+
+          {/* Top Cards */}
+          <div className="grid gap-6 lg:grid-cols-2">
+
+            {/* Card 1 */}
+            <div className="rounded-3xl bg-white p-10 shadow-sm">
+              <h3 className="text-7xl font-bold text-cyan-600">3K+</h3>
+
+              <p className="mt-6 max-w-xs text-2xl font-medium text-slate-900">
+                Businesses already running on Nova
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="rounded-3xl bg-white p-10 shadow-sm">
+              <h3 className="max-w-sm text-3xl font-semibold text-slate-900">
+                Instant Withdraw your funds at any time
+              </h3>
+
+              <div className="mt-10 flex items-center justify-center gap-8">
+                <FingerprintPattern />
+
+                <div className="text-slate-300 text-3xl">
+                  ↔
+                </div>
+
+                <BookKey />
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Card */}
+          <div className="mt-6 rounded-3xl bg-white p-10 shadow-sm">
+            <div className="grid gap-10 lg:grid-cols-[350px_1fr]">
+
+              {/* Left Content */}
+              <div className="flex flex-col justify-center">
+                <h3 className="text-4xl font-bold text-slate-900">
+                  No asset volatility
+                </h3>
+
+                <p className="mt-4 leading-relaxed text-slate-500">
+                  Generate returns on your cash reserves without making
+                  any investments.
+                </p>
+              </div>
+
+              {/* Chart */}
+              <div className="rounded-3xl bg-slate-50 p-6">
+                <RevenueChart />
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
