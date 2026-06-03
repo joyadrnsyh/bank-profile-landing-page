@@ -4,10 +4,10 @@ import { Button } from "@heroui/react";
 import { ArrowUpRight } from "lucide-react";
 
 const menuItems = [
-    { name: "Beranda", href: "/" },
-    { name: "Produk", href: "/produk" },
-    { name: "Tentang", href: "/tentang" },
-    { name: "Kontak", href: "/kontak" },
+    { name: "Product", href: "/" },
+    { name: "Customers", href: "/" },
+    { name: "Princing", href: "/" },
+    { name: "Learn", href: "/" },
 ];
 
 const navLink =
